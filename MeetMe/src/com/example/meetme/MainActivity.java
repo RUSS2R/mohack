@@ -1,5 +1,7 @@
 package com.example.meetme;
 
+import com.example.meetme.network.RequestTask;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -28,7 +30,7 @@ public class MainActivity extends Activity {
         shareButton.setOnClickListener(new View.OnClickListener() {
 			
 			public void onClick(View v) {
-				mapActivityIntent.putExtra("MyStatus", myStatus.getText().toString());				
+				mapActivityIntent.putExtra("MyStatus", myStatus.getText().toString());		
 				startActivity(mapActivityIntent);
 			}
 		});
